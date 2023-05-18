@@ -47,7 +47,8 @@ class Overworld extends Phaser.Scene {
 
         // enable collision
         terrainLayer.setCollisionByProperty({ collides: true});
-        treeLayer.setCollisionByProperty({ collides: true}).setDepth(20);
+        treeLayer.setCollisionByProperty({ collides: true}).setDepth(19);
+        house1.setDepth(20);
         house2.setCollisionByProperty({ collides: true}).setDepth(21);
         this.physics.add.collider(this.slime, terrainLayer);
         this.physics.add.collider(this.slime, treeLayer);
